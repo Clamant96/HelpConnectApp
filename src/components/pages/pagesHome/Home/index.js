@@ -29,6 +29,7 @@ export default function Inicio() {
     },
     inicioTexto: {
         padding: 20,
+        height: 250,
         alignItems: "center",
         justifyContent: "center",
     },
