@@ -12,7 +12,7 @@ export default function Inicio() {
 
             <View style={styles.inicioImg}>
                 <Image 
-                    source={require('../../../assets/imgservices.png')} 
+                    source={require('../../../../../assets/imgservices.png')}
                     style={styles.image} 
 
                 />

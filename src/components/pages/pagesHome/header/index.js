@@ -12,7 +12,7 @@ export default class SideBar extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Image 
+                {/*<Image 
                     source={require('../../../assets/menuIcon.png')} 
                     style={styles.image} 
 
@@ -21,6 +21,12 @@ export default class SideBar extends Component {
                 <Button
                     onPress={this._onPressButton}
                     title="Login"
+                />*/}
+
+                <Image 
+                    source={require('../../../../../assets/logo.png')} 
+                    style={styles.image} 
+
                 />
 
             </View>
@@ -30,20 +36,32 @@ export default class SideBar extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        padding: 20,
-        margin: 20,
-        height: 100,
+        paddingTop: 0,
+        margin: 0,
+        height: 80,
             
         alignItems: "center",
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "center",
+
+        backgroundColor: '#f1f1f1',
+        
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.23,
+        shadowRadius: 2.62,
+
+        elevation: 4,
         
     },
     image: {
-        width: 40,
+        width: 100,
         height: 40,
     },
-    buttonContainer: {
+    /*buttonContainer: {
         margin: 20,
     },
     buttonMenu: {
@@ -53,5 +71,5 @@ const styles = StyleSheet.create({
     },
     buttonLogin: {
         margin: 20,
-    },
+    },*/
 });
